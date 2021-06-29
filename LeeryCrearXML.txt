@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8">
+<menu>
+    <breakfastMenu>
+        <item category="entradas">
+                <name>Sánduche con queso</name>
+                <description>Un sánduche con queso.</description>
+                <price>$10.99</price>
+            </item>
+            <item category="entradas">
+                <name>Sánduche de Pollo</name>
+                <description>Un sánduche de pollo. </description>
+                <price>$12.99</price>
+            </item>
+            <item category="entradas">
+                <name>Sánduche de Pastrami</name>
+                <description>Un sánduche hecho con pastrami.</description>
+                <price>$13.99</price>
+            </item>
+            <item category="bebidas">
+                <name>Cafe</name>
+                <description>Un cafe.</description>
+                <price>$0.99</price>
+            </item>
+            <item category="bebidas">
+                <name>Jugo de Naranja</name>
+                <description>Un jugo hecho con naranjas.</description>
+                <price>$0.99</price>
+    </breakfastMenu>
+    <lunchMenu>
+        <item category="entradas">
+            <name>Ensalada con Pollo</name>
+            <description>Una ensalada con pollo.</description>
+            <price>$10.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pollo</name>
+            <description>Un sánduche de pollo. </description>
+            <price>$12.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pastrami</name>
+            <description>Un sánduche hecho con pastrami.</description>
+            <price>$13.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Coca-Cola</name>
+            <description>Una gaseosa.</description>
+            <price>$0.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Jugo de Naranja</name>
+            <description>Un jugo hecho con naranjas.</description>
+            <price>$0.99</price>
+        </item>    
+    </lunchMenu>
+    <dinnerMenu>
+        <item category="entradas">
+            <name>sopa</name>
+            <description>Una sopa.</description>
+            <price>$10.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pollo</name>
+            <description>Un sánduche de pollo. </description>
+            <price>$12.99</price>
+        </item>
+        <item category="entradas">
+            <name>Sánduche de Pastrami</name>
+            <description>Un sánduche hecho con pastrami.</description>
+            <price>$13.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Coca-Cola</name>
+            <description>Una gaseosa.</description>
+            <price>$0.99</price>
+        </item>
+        <item category="bebidas">
+            <name>Jugo de Naranja</name>
+            <description>Un jugo hecho con naranjas.</description>
+            <price>$0.99</price>
+        </item>   
+    </dinnerMenu>
+</menu>
+
+<display-name> nombre del proyecto
+<servlet> hace referencia a los archivos que permiten la comunicacion entre la web y la clase
+<servlet-name> nombre archivo
+<servlet-class> ubicacion archivo class
+<servlet-mapping>...
+<url-pattern>...
+<welcome-file> hacer referencia al archivo html index principal
