@@ -8,11 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="Counter">
+	<form action="Counter" method="post">
 		<input type="submit" value="Click Me!">
 		<p>
 			You have clicked this button
-			<c:out value="${count.plus()}" />
+			<c:out value="${count}" />
 			times
 		</p>
 	</form>

@@ -1,6 +1,7 @@
 package com.codingdojo.web.controllers;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,17 +11,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.codingdojo.web.models.Roster;
+
 /**
- * Servlet implementation class Counter
+ * Servlet implementation class Home
  */
-@WebServlet("/Counter")
-public class Counter extends HttpServlet {
+@WebServlet("/Home")
+public class Home extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public Counter() {
+	public Home() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -31,18 +34,13 @@ public class Counter extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		// Para mostrar la cantidad de jugadores de cada equipo
 		HttpSession session = request.getSession();
+		ArrayList<Integer> playersAmount = Roster.getPlayersAmount();
+		session.setAttribute("playersAmount", playersAmount);
 
-		if (session.getAttribute("count") == null) {
-			int count = 0;
-			session.setAttribute("count", count);
-		} else {
-			int count = (int) session.getAttribute("count");
-			count++;
-			session.setAttribute("count", count);
-		}
-
-		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/showCounter.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		view.forward(request, response);
 	}
 
